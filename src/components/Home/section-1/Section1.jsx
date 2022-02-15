@@ -26,7 +26,7 @@ const Section_1 = () => {
             <a href="#">Nearest Centres</a>
             <a href="#">About us</a>
           </div>
-          <img src={home_1} alt="image"/>
+          <img src={home_1} alt="trak_image"/>
         </div>
     </div>
     </>
