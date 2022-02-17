@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../../../assets/images/icons/logo.png'
-import home_1 from '../../../assets/images/home_1.jpg'
+import logo from '../../assets/icons/logo.png'
+import home_1 from '../../assets/images/home_1.jpg'
 import "./style.css"
 
 const Section_1 = () => {
