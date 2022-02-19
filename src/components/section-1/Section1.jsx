@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/icons/logo.png'
-import home_1 from '../../assets/images/home_1.jpg'
+import track_1 from '../../assets/images/track_1.png'
 import "./style.css"
 
 const Section_1 = () => {
@@ -26,7 +26,9 @@ const Section_1 = () => {
             <a href="#">Nearest Centres</a>
             <a href="#">About us</a>
           </div>
-          <img src={home_1} alt="trak_image"/>
+          <div className="bg_purple">
+          <img src={track_1} alt="trak_image"/>
+          </div>
         </div>
     </div>
     </>
