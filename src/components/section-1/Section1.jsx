@@ -13,9 +13,11 @@ const Section_1 = () => {
             </div>
             <div className="content">
               <p className='main_heading'>EXPLORE TO LEARN</p>
+              <div>
               <p className='sub_heading'>SEEING the WORLD through UNIQUE LENS</p>
               <p className='des_heading'>We organize finely crafted educational tours</p> 
               <p className='des_heading'>for students and foreigners!</p>
+              </div>
             </div>
             <button className='btn-plan'>PLAN MY TRIP</button>
         </div>
