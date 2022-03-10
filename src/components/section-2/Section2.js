@@ -15,25 +15,25 @@ const Section2=props=>{
           label: 'Roorkee, Uttarakhand',
           route:'R->M->C->R',
           imgPath:Trip_Place1,
-          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim. Nam laoreet, nisl at vestibulum luctus, urna libero suscipit libero, nec pharetra lacus orci nec orci. Etiam egestas suscipit cursus.'
+          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim.'
         },
         {
           label: 'Dehradun',
           route:'R->M->C->R',
           imgPath:Trip_Place1,
-          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim. Nam laoreet, nisl at vestibulum luctus, urna libero suscipit libero, nec pharetra lacus orci nec orci. Etiam egestas suscipit cursus.'
+          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim.'
         },
         {
           label: 'Haridwar',
           route:'R->M->C->R',
           imgPath:Trip_Place1,
-          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim. Nam laoreet, nisl at vestibulum luctus, urna libero suscipit libero, nec pharetra lacus orci nec orci. Etiam egestas suscipit cursus.'
+          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim.'
         },
         {
           label: 'Rishikesh',
           route:'R->M->C->R',
           imgPath:Trip_Place1,
-          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim. Nam laoreet, nisl at vestibulum luctus, urna libero suscipit libero, nec pharetra lacus orci nec orci. Etiam egestas suscipit cursus.'
+          details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim.'
         },
       ];
 
@@ -57,7 +57,7 @@ const Section2=props=>{
 
 
     return(
-        <Box display='flex' style={{width:'100vw',height:'100vh'}}>
+        <Box display='flex' className={classes.Section2}>
             <div className={classes.tripImages}>
                 <p className={classes.placeName}>{images[activeStep].label}</p>
                 <img src={images[activeStep].imgPath} className={classes.ImageTrip}/>
@@ -70,9 +70,9 @@ const Section2=props=>{
                 disableRipple
                 onClick={handleBack}
                 disabled={activeStep === 0}
-                style={{backgroundColor:'transparent',}}
+                className={classes.btnArrow}
                 >
-                <KeyboardArrowLeft style={{fontSize:'5rem',}}/>
+                <KeyboardArrowLeft style={{fontSize:'2rem'}}/>
                 </IconButton>
                 <div style={{display:'flex',flexDirection:'column',alignItems:'center',width:'80%'}}>
                 <SwipeableViews               
@@ -83,12 +83,19 @@ const Section2=props=>{
                 >
                     {images.map((step,index)=>(
                         <div key={step.label}>                           
-                            <Box sx={{boxSizing:'border-box', padding:'1rem'}}>
+                            <Box className={classes.tripBox}>
                                     <img src={busIcon} />                               
-                                    <Typography style={{fontWeight:'500',fontFamily:'Roboto',textTransform:'uppercase',margin:'2% 0'}}>{step.label}</Typography>
-                                    <Typography style={{fontWeight:'400',fontFamily:'Roboto',margin:'6% 0'}}>{step.route}</Typography>
-                                    <Typography style={{textAlign:'justify',fontSize:'0.9rem'}}>{step.details}</Typography> 
-                                    <button className={classes.btnBook} ><Typography style={{fontWeight:'500',fontFamily:'Roboto'}}>BOOK NOW</Typography></button>                              
+                                    <Typography style={{fontWeight:'600',fontFamily:'Roboto',textTransform:'uppercase',margin:'2% 0',fontSize:'1.2rem'}}>{step.label}</Typography>
+                                    <Typography style={{fontWeight:'400',fontFamily:'Roboto',margin:'4% 0'}}>{step.route}</Typography>
+                                    <Typography className={classes.tripDetails}>{step.details}</Typography>
+                                    <div className={classes.cta}>
+                                    <button className={classes.btnDetails} ><Typography style={{color:'black'}}className={classes.btnText}>VIEW DETAILS</Typography></button>
+                                    <button className={classes.btnBook} >
+                                      <Typography className={classes.btnText}>
+                                        BOOK NOW!
+                                      </Typography>
+                                    </button> 
+                                    </div>                              
                             </Box>
                         </div>
                     ))}
@@ -104,9 +111,9 @@ const Section2=props=>{
                 disableRipple
                 onClick={handleNext}
                 disabled={activeStep === maxSteps - 1}
-                style={{backgroundColor:'transparent'}}
+                className={classes.btnArrow}
                 >
-                <KeyboardArrowRight style={{fontSize:'5rem'}}/>
+                <KeyboardArrowRight style={{fontSize:'2rem'}}/>
                 </IconButton>
                 </div>
             </div>
