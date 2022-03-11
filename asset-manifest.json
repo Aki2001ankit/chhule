@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/iiEdTours/static/css/main.57e80e19.css",
+    "main.js": "/iiEdTours/static/js/main.a70c24ea.js",
+    "static/media/track_1.png": "/iiEdTours/static/media/track_1.3e2bcc75da2ad645e23f.png",
+    "index.html": "/iiEdTours/index.html",
+    "main.57e80e19.css.map": "/iiEdTours/static/css/main.57e80e19.css.map",
+    "main.a70c24ea.js.map": "/iiEdTours/static/js/main.a70c24ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e80e19.css",
+    "static/js/main.a70c24ea.js"
+  ]
+}
