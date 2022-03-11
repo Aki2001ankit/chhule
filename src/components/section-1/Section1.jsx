@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/icons/logo.png'
 import track_1 from '../../assets/images/track_1.png'
+import Navbar from '../navbar/Navbar'
 import "./style.css"
 
 const Section_1 = () => {
@@ -22,12 +23,7 @@ const Section_1 = () => {
             <button className='btn-plan'>PLAN MY TRIP</button>
         </div>
         <div className="grid_item_2">
-          <div className="navbar">
-            <a href="#">Blogs</a>
-            <a href="#">Indian Marvels</a>
-            <a href="#">Nearest Centres</a>
-            <a href="#">About us</a>
-          </div>
+          <Navbar/>
           <div className="bg_purple">
           <img src={track_1} alt="trak_image"/>
           </div>

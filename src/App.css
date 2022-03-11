@@ -3,3 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
+  .temp-navbar_wrapper{
+    position: relative;
+    height: 100px;
+    background: #7e53c8;
+  }
