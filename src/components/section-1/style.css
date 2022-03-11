@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
 }
-.logo {
-  padding: 42px 0 0 38px;
+.grid_item{
+  display: flex;
+  align-items: center;
 }
 .content {
   padding: 0 38px;
@@ -65,12 +66,9 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  .navbar {
-    display: none;
   }
   .grid_item{
     height: 100vh;
@@ -95,11 +93,6 @@
   .des_heading{
     color: rgba(255, 255, 255, 0.7) !important;
     font-weight: bold;
-  }
-  .logo {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
   }
   .btn-plan {
     color: black;
