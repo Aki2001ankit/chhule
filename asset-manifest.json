@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/iiEdTours/static/css/main.26a18601.css",
-    "main.js": "/iiEdTours/static/js/main.5d6c685f.js",
+    "main.css": "/iiEdTours/static/css/main.1184b657.css",
+    "main.js": "/iiEdTours/static/js/main.488db499.js",
     "static/media/track_1.png": "/iiEdTours/static/media/track_1.3e2bcc75da2ad645e23f.png",
     "index.html": "/iiEdTours/index.html",
-    "main.26a18601.css.map": "/iiEdTours/static/css/main.26a18601.css.map",
-    "main.5d6c685f.js.map": "/iiEdTours/static/js/main.5d6c685f.js.map"
+    "main.1184b657.css.map": "/iiEdTours/static/css/main.1184b657.css.map",
+    "main.488db499.js.map": "/iiEdTours/static/js/main.488db499.js.map"
   },
   "entrypoints": [
-    "static/css/main.26a18601.css",
-    "static/js/main.5d6c685f.js"
+    "static/css/main.1184b657.css",
+    "static/js/main.488db499.js"
   ]
 }
