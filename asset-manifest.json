@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/iiEdTours/static/css/main.1184b657.css",
-    "main.js": "/iiEdTours/static/js/main.488db499.js",
+    "main.css": "/iiEdTours/static/css/main.9698c637.css",
+    "main.js": "/iiEdTours/static/js/main.242d0b33.js",
     "static/media/track_1.png": "/iiEdTours/static/media/track_1.3e2bcc75da2ad645e23f.png",
+    "static/media/aboutUs.svg": "/iiEdTours/static/media/aboutUs.ce620f83e5ccf9b19d33e9962f949cac.svg",
     "index.html": "/iiEdTours/index.html",
-    "main.1184b657.css.map": "/iiEdTours/static/css/main.1184b657.css.map",
-    "main.488db499.js.map": "/iiEdTours/static/js/main.488db499.js.map"
+    "static/media/home.svg": "/iiEdTours/static/media/home.5ab77e6848048f97ec4a6d8910cef7ed.svg",
+    "static/media/indianMarvels.svg": "/iiEdTours/static/media/indianMarvels.7ee6b0f2fe9c3055c9ddd7486b937d13.svg",
+    "static/media/nearestCenters.svg": "/iiEdTours/static/media/nearestCenters.1e4eb0948069f61fd8c37383e33de9e8.svg",
+    "static/media/Blogs.svg": "/iiEdTours/static/media/Blogs.7bdeb65268d8f9cdfdf2949e15bb0707.svg",
+    "main.9698c637.css.map": "/iiEdTours/static/css/main.9698c637.css.map",
+    "main.242d0b33.js.map": "/iiEdTours/static/js/main.242d0b33.js.map"
   },
   "entrypoints": [
-    "static/css/main.1184b657.css",
-    "static/js/main.488db499.js"
+    "static/css/main.9698c637.css",
+    "static/js/main.242d0b33.js"
   ]
 }
