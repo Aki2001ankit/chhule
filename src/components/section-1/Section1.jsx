@@ -1,7 +1,7 @@
 import React from 'react'
 import track_1 from '../../assets/images/track_1.png'
 import Navbar from '../navbar/Navbar'
-import "./style.css"
+import "./section1.css"
 
 const Section_1 = () => {
   return (

@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Router hashType = 'noslash'> {/*Check Once: no slash is not working */}
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='/Blogs' element={<Blogs />} />
           <Route path='/IndianMarvels' element={<IndianMarvels />} />
           <Route path='/NearestCentres' element={<NearestCentres />} />

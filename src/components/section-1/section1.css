@@ -12,12 +12,16 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+/* .content p{
+  margin: 1em;
+} */
 .main_heading {
   color: #7e53c8;
   font-size: 42px;
   font-weight: 700;
   line-height: 49px;
   letter-spacing: 0em;
+  margin: 1em 0;
 }
 .sub_heading {
   color: #858383;
@@ -27,6 +31,7 @@
   letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
+  margin: 1em 0;
 }
 .des_heading {
   font-size: 17px;
@@ -34,6 +39,7 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 1em 0;
 }
 .btn-plan {
   color: #fff;
