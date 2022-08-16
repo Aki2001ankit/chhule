@@ -1,6 +1,7 @@
 import React from 'react'
 import track_1 from '../../assets/images/track_1.png'
 import Navbar from '../navbar/Navbar'
+
 import "./section1.css"
 
 const Section_1 = () => {
@@ -26,6 +27,7 @@ const Section_1 = () => {
             <img src={track_1} alt="trak_image" />
           </div>
         </div>
+        {/* <Footer/> */}
       </div>
     </>
   )

@@ -9,6 +9,7 @@ import Blogs from "./pages/Blogs";
 import IndianMarvels from "./pages/IndianMarvels";
 import NearestCentres from "./pages/NearestCentres";
 import AboutUs from "./pages/AboutUs";
+
 import './App.css'
 import './styles/font.css'
 
@@ -22,6 +23,8 @@ function App() {
           <Route path='/IndianMarvels' element={<IndianMarvels />} />
           <Route path='/NearestCentres' element={<NearestCentres />} />
           <Route path='/AboutUs' element={<AboutUs />} />  
+          
+        
         </Routes>
       </Router>
     </div>
