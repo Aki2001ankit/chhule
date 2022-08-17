@@ -17,8 +17,8 @@
 
 .social-media {
     display: flex;
-    margin: auto;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -34,4 +34,14 @@
     text-align: center;
     color: #ffffff;
     padding: 13px 0px 30px 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    text-align: center;
 }

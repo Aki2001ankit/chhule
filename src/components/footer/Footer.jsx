@@ -6,7 +6,7 @@ import {
   FaWhatsapp,
   FaInstagram,
   FaLinkedin,
-  SiGmail
+  
 } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
 
@@ -16,10 +16,10 @@ const Footer = () => {
       <div className='footer bg-dark'>
         <div className='contact-us'>CONTACT US</div>
         <IconContext.Provider value={{ color: '#fff', size: '3.125em' }}>
-          <div className='social-media  '>
+          <div className='flex-container '>
          
          
-            <div className='social-media_icon '>
+            <div className='social-media_icon'>
               <a href='https://wa.me/8920529523'>
                 <FaWhatsapp />
               </a>
@@ -49,6 +49,7 @@ const Footer = () => {
            
           </div>
         </IconContext.Provider>
+      
         <div className='address'>Office Address</div>
       </div>
     </>

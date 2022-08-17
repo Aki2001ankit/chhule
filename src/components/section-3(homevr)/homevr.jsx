@@ -7,8 +7,8 @@ import { BsFillShieldFill } from "react-icons/bs";
 const Homevr = () => {
   return (
     <>
-      <div className="row  container col-12 mx-auto">
-        <div className="col-12 col-md-5 col-lg-4 ">
+      <div className="row container col-12 p-0">
+        <div className="col-12 col-md-5 col-lg-4  ">
           <div className="">
             <h1 className="head-text m-5">STANDING OUT OF THE CROWD!</h1>
 
