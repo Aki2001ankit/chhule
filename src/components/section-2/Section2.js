@@ -15,7 +15,7 @@ const Section2 = (props) => {
       route: "R->M->C->R",
       imgPath: Trip_Place1,
       details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante suscipit, rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim rhoncus quam semper, sagittis lorem. Fusce varius mattis nisi sit amet cursus. Aliquam fringilla cursus dignissim.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat nunc. Mauris in ante susci",
     },
     {
       label: "Dehradun",
