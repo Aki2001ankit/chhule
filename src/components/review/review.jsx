@@ -1,144 +1,99 @@
-// import React, { useRef, useState } from "react";
-// // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// // Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-
-// import "./review.css";
-
-// // import required modules
-// import { Pagination, Navigation } from "swiper";
-
-// export default function Review() {
-//   return (
-//     <>
-//     <div className="bg-success">
-//       <Swiper
-//         slidesPerView={3}
-//         spaceBetween={30}
-//         slidesPerGroup={3}
-//         loop={true}
-//         loopFillGroupWithBlank={true}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         navigation={true}
-//         modules={[Pagination, Navigation]}
-//         className="mySwiper"
-//       >
-//         <SwiperSlide>Slide 1</SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//         <SwiperSlide>Slide 5</SwiperSlide>
-//         <SwiperSlide>Slide 6</SwiperSlide>
-//         <SwiperSlide>Slide 7</SwiperSlide>
-//         <SwiperSlide>Slide 8</SwiperSlide>
-//         <SwiperSlide>Slide 9</SwiperSlide>
-//       </Swiper>
-//       </div>
-//     </>
-//   );
-// }
-import React, { useRef, useState } from "react";
-import SwiperCore, { Autoplay, Virtual, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
+import React from "react";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
 import "./review.css";
-
-// install Virtual module
-SwiperCore.use([Autoplay, Virtual, Navigation, Pagination]);
+const breakPoints = [
+  { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 1450, itemsToShow: 3, itemsToScroll: 2 },
+  { width: 1750, itemsToShow: 4, itemsToScroll: 2 },
+];
 
 export default function App() {
-  const [swiperRef, setSwiperRef] = useState(null);
-  const appendNumber = useRef(500);
-  const prependNumber = useRef(1);
-  // Create array with 500 slides
-  const [slides, setSlides] = useState(
-    Array.from({ length: 500 }).map((_, index) => `Slide ${index + 1}`)
-  );
-
-  const prepend = () => {
-    setSlides([
-      `Slide ${prependNumber.current - 2}`,
-      `Slide ${prependNumber.current - 1}`,
-      ...slides,
-    ]);
-    prependNumber.current = prependNumber.current - 2;
-    swiperRef.slideTo(swiperRef.activeIndex + 2, 0);
-  };
-
-  const append = () => {
-    setSlides([...slides, "Slide " + ++appendNumber.current]);
-  };
-
-  const slideTo = (index) => {
-    swiperRef.slideTo(index - 1, 0);
-  };
-
+  const array = [
+    { id: 1, title: "item #1" },
+    { id: 2, title: "item #2" },
+    { id: 3, title: "item #3" },
+    { id: 4, title: "item #4" },
+    { id: 5, title: "item #5" },
+  ];
   return (
     <>
-      <div className="bg-danger col-12 col-lg-7">
-        <Swiper
-          slidesPerView={1}
-        spaceBetween={30}
-      slidesPerGroup={3}
-        loop={true}
-       loopFillGroupWithBlank={true}       
-        pagination={{
-         clickable: true,
-        }}
-       navigation={true}
-        modules={[Pagination, Navigation]}
-         className="mySwiper"
-        >
-          <SwiperSlide className="">
-          <div className="row col-12 col-md-10 mx-auto">
-            <div className="col-10 col-md-5 bg-success mx-auto">slide1</div>
-            <div className="col-10 col-md-5 bg-danger mx-auto">slide1</div>
+      <div className="row col-12 container  m-0 p-0">
+        <div className="bg-theme-color d-flex col-12 container col-md-7 p-0 m-auto">
+          <div className="col-12 text-center imgadr align-items-center justify-content-center">
+           
+              <h1 className="review mt-5 mb-5">REVIEWS</h1>
+           
+           
+              <Carousel breakPoints={breakPoints} pagination={false}>
+                {/* {array.map(item => <Item key={item.id}>{item.title}</Item>)}  */}
+                <Item>
+                  <h1 className="pt-5">one</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima dolores ex, repudiandae ipsum eligendi illo.
+                  </p>
+                  <h1>name</h1>
+                </Item>
+                <Item>
+                  <h1 className="pt-5">two</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima dolores ex, repudiandae ipsum eligendi illo.
+                  </p>
+                  <h1>name</h1>
+                </Item>
+                <Item>
+                  <h1 className="pt-5">three</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima dolores ex, repudiandae ipsum eligendi illo.
+                  </p>
+                  <h1>three</h1>
+                </Item>
+                <Item>
+                  <h1 className="pt-5">four</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima dolores ex, repudiandae ipsum eligendi illo.
+                  </p>
+                  <h1>name</h1>
+                </Item>
+                <Item>
+                  <h1 className="pt-5">five</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima dolores ex, repudiandae ipsum eligendi illo.
+                  </p>
+                  <h1>name</h1>
+                </Item>
+              </Carousel>
+            
           </div>
-          
-          </SwiperSlide>
-          <SwiperSlide className="bg-danger">Slide 2</SwiperSlide> 
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-          {/* {slides.map((slideContent, index) => (
-          <SwiperSlide key={slideContent} virtualIndex={index}>
-            {slideContent}
-          </SwiperSlide>
-        ))} */}
-        </Swiper>
-
-        <p className="append-buttons">
-          <button onClick={() => prepend()} className="prepend-2-slides">
-            Prepend 2 Slides
-          </button>
-          <button onClick={() => slideTo(1)} className="prepend-slide">
-            Slide 1
-          </button>
-          <button onClick={() => slideTo(250)} className="slide-250">
-            Slide 250
-          </button>
-          <button onClick={() => slideTo(500)} className="slide-500">
-            Slide 500
-          </button>
-          <button onClick={() => append()} className="append-slides">
-            Append Slide
-          </button>
-        </p>
+        </div>
+        {/* content */}
+        <div className="col-12 col-md-5 m-auto pt-5 ">
+          <div className="col-9 m-auto mb-2">
+            <h4 className="text-right head-style">Trips</h4>
+            <p className="text-justify">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              omnis nulla debitis neque laborum fuga esse praesentium corrupti
+              illo ipsum? Ratione sunt{" "}
+            </p>
+          </div>
+          <br />
+          <div className="col-9 m-auto mt-2">
+            <h4 className="text-right head-style">Collabs</h4>
+            <p className="text-justify">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              omnis nulla debitis neque laborum fuga esse praesentium corrupti
+              illo ipsum? Ratione sunt{" "}
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
