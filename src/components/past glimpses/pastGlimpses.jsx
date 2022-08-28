@@ -24,7 +24,7 @@ const images = [
 
 const Glimpses = () => {
   return (
-    <div className="row container col-12 p-0 ">
+    <div className=" d-block row container col-12 p-0 ">
       <div className="text-center col-12 mt-4 mb-3">
         <h1 className="text-design">PAST GLIMPSES</h1>
       </div>
