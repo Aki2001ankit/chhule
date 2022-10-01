@@ -13,6 +13,7 @@ const Section_1 = () => {
           <div>
             <div className="content">
               <p className="main_heading">EXPLORE TO LEARN</p>
+              
               <div>
                 <p className="sub_heading">
                   SEEING the WORLD through UNIQUE LENS
@@ -33,6 +34,7 @@ const Section_1 = () => {
         </div>
         {/* <Footer/> */}
       </div>
+      <div className="bg-border-bottom"></div>
     </>
   );
 };

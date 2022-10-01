@@ -13,7 +13,7 @@ body {
 .temp-navbar_wrapper {
     /* position: relative; */
     height: 60px;
-    background: #7e53c8;
+    background: red;
 }
 
 .temp-navbar_wrapper .navWrapper {
@@ -22,4 +22,38 @@ body {
 
 .bg-theme-color {
     background-color: #7E53C8;
+}
+
+.bg-theme-color-m {
+    background-color: #a248eb44;
+}
+
+.bg-border-bottom {
+    background-color: #C55FFC;
+    width: 100vw;
+    height: 6px;
+}
+
+.btn-style {
+    background-color: #C55FFC;
+    /* C55FFC 7e53c8 */
+    height: 42px;
+    width: 42px;
+    margin: auto;
+}
+
+.btn-style-b {
+    background-color: black;
+    /* C55FFC 7e53c8 */
+    height: 42px;
+    width: 42px;
+    margin: auto;
+}
+
+.btn-style:hover {
+    background-color: #5f0092;
+}
+
+.btn-style-b:hover {
+    background-color: #5f0092;
 }

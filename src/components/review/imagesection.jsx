@@ -1,5 +1,7 @@
 import React from "react";
-import Carousel from "react-elastic-carousel";
+import Carousel,{ consts }  from "react-elastic-carousel";
+import { IconContext } from "react-icons";
+import { TiMediaPlay,TiMediaPlayReverse } from "react-icons/ti";
 import Item from "./Item";
 import "./review.css";
 const breakPoints = [
@@ -16,10 +18,22 @@ const Imagesection = () => {
     { id: 4, title: "item #4" },
     { id: 5, title: "item #5" },
   ];
+  const myArrow =({ type, onClick, isEdge })=>{
+    const pointer = type === consts.PREV ? <TiMediaPlayReverse/> : <TiMediaPlay/>
+      return (
+        <button type="button"  onClick={onClick} disabled={isEdge} className="btn btn-sm  rounded-circle btn-style">
+         <IconContext.Provider value={{ color: "#fff", size: "1.75em" }}>
+         
+         {pointer}
+         </IconContext.Provider>
+         
+        </button>
+      )
 
+  }
   return (
     <>
-      <div className="d-flex col-12 col-md-7 container1 m-0 p-0 bg-theme-color">
+      <div className="d-flex col-12 col-md-7 container1 m-0 p-1 pl-1 bg-theme-color-m">
         <div className="col-12 text-center imgadr align-items-center justify-content-center">
           <h1 className="review mt-5 mb-5">REVIEWS</h1>
 
@@ -27,6 +41,7 @@ const Imagesection = () => {
             className="mb-5"
             breakPoints={breakPoints}
             pagination={false}
+            renderArrow={myArrow}
           >
             {array.map((item) => (
               <Item key={item.id}>{item.title}</Item>

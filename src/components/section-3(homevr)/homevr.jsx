@@ -10,6 +10,9 @@ const Homevr = () => {
         <Writtensection />
         <Imagesection />
       </div>
+      <div className="bg-border-bottom">
+
+</div>
     </>
   );
 };

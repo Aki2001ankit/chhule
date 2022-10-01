@@ -1,13 +1,16 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/icons/logo.png";
+import logo from "./logo.svg";
+import logo_m from "./logo_m.svg";
 import homeIcon from "./home.svg";
 import blogIcon from "./Blogs.svg";
+import newfeature_s from './newfeature.svg'
 import indianMarvelsIcon from "./indianMarvels.svg";
 import nearestCentersIcon from "./nearestCenters.svg";
 import aboutUsIcon from "./aboutUs.svg";
 import MenuIcon from "@mui/icons-material/Menu";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -23,11 +26,20 @@ const Navbar = () => {
       <div className="navWrapper">
         <div className="logo">
           <img
+           className="largerwidth-logo"
             src={logo}
             height="57px"
             alt="logo"
             onClick={() => navigate("/")}
           />
+          <img
+           className="smallerwidth-logo"
+            src={logo_m}
+            height="57px"
+            alt="logo"
+            onClick={() => navigate("/")}
+          />
+         
           <MenuIcon
             className="menuIcon"
             sx={{ fontSize: 40, color: "white" }}
@@ -43,7 +55,7 @@ const Navbar = () => {
             <img src={blogIcon} height="24px" alt="blogIcon" />
             Blogs
           </NavLink>
-          <NavLink to="/IndianMarvels">
+          <NavLink to="/indianmarvels">
             <img
               src={indianMarvelsIcon}
               height="24px"
@@ -51,7 +63,7 @@ const Navbar = () => {
             />
             Indian Marvels
           </NavLink>
-          <NavLink to="/NearestCentres">
+          <NavLink to="/nearestcentres">
             <img
               src={nearestCentersIcon}
               height="24px"
@@ -59,10 +71,18 @@ const Navbar = () => {
             />{" "}
             Nearest Centres
           </NavLink>
-          <NavLink to="/AboutUs">
+          <NavLink to="/aboutus">
             <img src={aboutUsIcon} height="24px" alt="aboutUsIcon" />
             About us
           </NavLink>
+        
+          <img
+          
+            src={newfeature_s}
+            height="57px"
+            alt="logo"
+            onClick={() => navigate("/aboutUs")}
+          />
         </div>
       </div>
     </>
