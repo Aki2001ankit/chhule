@@ -1,3 +1,46 @@
 .container {
     height: 100vh;
 }
+
+.text-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #7E53C8;
+}
+
+.text-style-blur {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(126, 83, 200, 0.75);
+}
+
+.border-style {
+    height: 2px;
+    background-image: linear-gradient(to right, #7E53C8, #7E53C800);
+}
+
+.bg-color {
+    background-color: #7e53c81b;
+}
+
+.text-formatted {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.text-formatted-ans {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}

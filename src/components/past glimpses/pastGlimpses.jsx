@@ -52,12 +52,12 @@ const Glimpses = () => {
   };
   return (
     <>
-      <div className=" d-block row container col-12 p-0  m-auto">
+      <div className=" d-block row  col-12 p-0  m-auto mb-0 pl-0">
         <h1 className="text-center past-glimpses-style mt-5 mb-4">
           PAST GLIMPSES
         </h1>
         <Carousel
-          className="mb-5"
+          className="mb-0 "
           breakPoints={breakPoints}
           pagination={false}
           renderArrow={myArrow}

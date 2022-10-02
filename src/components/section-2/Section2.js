@@ -31,13 +31,13 @@ const Section2 = () => {
     <div className="row">
       <Imagesection imgurl={image.imgPath} title={image.label} />
 
-      <div className="col-12 col-md-5 m-auto pt-5 ">
-        <h1 className="text-center explore-india col-9 m-auto pb-2">
+      <div className="col-12 col-md-5  m-auto pt-5 ">
+        <h1 className="text-center explore-india col-9  m-auto pb-2">
           EXPLORE INCREDIBLE INDIA!
         </h1>
         <Carousel
           className="mb-2 mt-2"
-          pagination={true}
+          pagination={false}
           onNextStart={() => {
             setimageindex(imageindex + 1);
           }}

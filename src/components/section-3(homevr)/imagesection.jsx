@@ -4,7 +4,8 @@ import imgadr from "../../assets/images/vr.png";
 const Imagesection = () => {
   return (
   <>
-     <div className="d-flex col-12 col-md-7 col-lg-8 bg-success container1 m-0 p-0">
+     <div className="d-flex col-12 col-md-7  bg-success container1 m-0 p-0">
+   
          
      
            <img className="image" src={imgadr} alt="Snow" />

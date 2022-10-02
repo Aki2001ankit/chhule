@@ -6,7 +6,7 @@ export default styled.div `
   flex-direction:row;
   flex-wrap:wrap;
   width:96%;
-  height:75vh;
+  height:65vh;
   margin:auto;
    justify-content:center;
   border-radius:17px;

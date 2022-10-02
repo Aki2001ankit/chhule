@@ -5,7 +5,7 @@ export default styled.div `
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  width:95%;
+  width:87%;
   min-height:50vh;
   margin:auto;
  
