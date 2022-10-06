@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/iiEdTours/static/css/main.51c6b3d6.css",
-    "main.js": "/iiEdTours/static/js/main.9a08c461.js",
+    "main.css": "/iiEdTours/static/css/main.762994b9.css",
+    "main.js": "/iiEdTours/static/js/main.b850ac09.js",
     "static/media/track_1.png": "/iiEdTours/static/media/track_1.945fb83f251d187d37b7.png",
-    "static/media/Trip_Place1.png": "/iiEdTours/static/media/Trip_Place1.d051ff7791982d71c3e7.png",
+    "static/media/Trip_Place1.png": "/iiEdTours/static/media/Trip_Place1.9771522dae394a5df09b.png",
+    "static/media/jaipur.svg": "/iiEdTours/static/media/jaipur.4f73e0aa1fbdbe14226c36aeca4e9e49.svg",
     "static/media/vr.png": "/iiEdTours/static/media/vr.1dee33afa2782dc6da2c.png",
     "static/media/logo_m.svg": "/iiEdTours/static/media/logo_m.cbdc821266b46413bced03a95bd52ebb.svg",
     "static/media/logo.svg": "/iiEdTours/static/media/logo.f7962219dfd0a690cc78f34e6c1c99d6.svg",
+    "static/media/logo_blacktext.svg": "/iiEdTours/static/media/logo_blacktext.c5c0b53c08e9354f2dea3e7fa9c476e2.svg",
+    "static/media/logo_bt_m.svg": "/iiEdTours/static/media/logo_bt_m.5428e07f2c00bb38b7dac6e82669aeb2.svg",
     "static/media/newfeature.svg": "/iiEdTours/static/media/newfeature.2f779a8552d7a5512bad37d09a61db72.svg",
     "index.html": "/iiEdTours/index.html",
     "static/media/aboutUs.svg": "/iiEdTours/static/media/aboutUs.5b318ffd66c7b6b7fa2b796a5ec0047b.svg",
@@ -14,11 +17,11 @@
     "static/media/indianMarvels.svg": "/iiEdTours/static/media/indianMarvels.16bf206da272f3cf8a200b1e1729409f.svg",
     "static/media/nearestCenters.svg": "/iiEdTours/static/media/nearestCenters.eb9b9aed4d228cfa32ddb3b7194a6b8a.svg",
     "static/media/Blogs.svg": "/iiEdTours/static/media/Blogs.9f37e92537dca3e0a10e75865c2b042a.svg",
-    "main.51c6b3d6.css.map": "/iiEdTours/static/css/main.51c6b3d6.css.map",
-    "main.9a08c461.js.map": "/iiEdTours/static/js/main.9a08c461.js.map"
+    "main.762994b9.css.map": "/iiEdTours/static/css/main.762994b9.css.map",
+    "main.b850ac09.js.map": "/iiEdTours/static/js/main.b850ac09.js.map"
   },
   "entrypoints": [
-    "static/css/main.51c6b3d6.css",
-    "static/js/main.9a08c461.js"
+    "static/css/main.762994b9.css",
+    "static/js/main.b850ac09.js"
   ]
 }
