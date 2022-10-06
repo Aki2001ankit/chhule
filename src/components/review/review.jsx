@@ -5,7 +5,7 @@ import Writtensection from "./writtensection";
 export default function App() {
   return (
     <>
-      <div className="row">
+      <div className="row height-100">
         <Imagesection />
         <Writtensection />
       </div>

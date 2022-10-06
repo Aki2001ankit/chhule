@@ -1,18 +1,16 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "./logo.svg";
-import logo_m from "./logo_m.svg";
+
 import homeIcon from "./home.svg";
 import blogIcon from "./Blogs.svg";
-import newfeature_s from './newfeature.svg'
+import newfeature_s from "./newfeature.svg";
 import indianMarvelsIcon from "./indianMarvels.svg";
 import nearestCentersIcon from "./nearestCenters.svg";
 import aboutUsIcon from "./aboutUs.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 
-
-const Navbar = () => {
+const Navbar = (props) => {
   const navigate = useNavigate();
   const openMenu = () => {
     const navWrapper = document.querySelector(".navWrapper");
@@ -23,23 +21,23 @@ const Navbar = () => {
   return (
     // Position of navbar is absolute so wrap it with a div when use
     <>
-      <div className="navWrapper">
+      <div className="navWrapper sticky-top">
         <div className="logo">
           <img
-           className="largerwidth-logo"
-            src={logo}
+            className="largerwidth-logo"
+            src={props.logo}
             height="57px"
             alt="logo"
             onClick={() => navigate("/")}
           />
           <img
-           className="smallerwidth-logo"
-            src={logo_m}
+            className="smallerwidth-logo"
+            src={props.logo_m}
             height="57px"
             alt="logo"
             onClick={() => navigate("/")}
           />
-         
+
           <MenuIcon
             className="menuIcon"
             sx={{ fontSize: 40, color: "white" }}
@@ -47,15 +45,32 @@ const Navbar = () => {
           />
         </div>
         <div className="navbar">
-          <NavLink to="/">
-            <img src={homeIcon} height="24px" alt="homeIcon" />
+          <NavLink
+            exact
+            activeclassName="active"
+            to="/"
+            style={({ isActive }) => ({
+              color: isActive ? "#C55FFC" : "white",
+            })}
+          >
+            <img src={homeIcon} height="24px" alt="blogIcon" />
             Home
           </NavLink>
-          <NavLink to="/Blogs">
+          <NavLink
+            to="/blogs"
+            style={({ isActive }) => ({
+              color: isActive ? "#C55FFC" : "white",
+            })}
+          >
             <img src={blogIcon} height="24px" alt="blogIcon" />
             Blogs
           </NavLink>
-          <NavLink to="/indianmarvels">
+          <NavLink
+            to="/indianmarvels"
+            style={({ isActive }) => ({
+              color: isActive ? "#C55FFC" : "white",
+            })}
+          >
             <img
               src={indianMarvelsIcon}
               height="24px"
@@ -63,7 +78,12 @@ const Navbar = () => {
             />
             Indian Marvels
           </NavLink>
-          <NavLink to="/nearestcentres">
+          <NavLink
+            to="/nearestcentres"
+            style={({ isActive }) => ({
+              color: isActive ? "#C55FFC" : "white",
+            })}
+          >
             <img
               src={nearestCentersIcon}
               height="24px"
@@ -71,13 +91,8 @@ const Navbar = () => {
             />{" "}
             Nearest Centres
           </NavLink>
-          <NavLink to="/aboutus">
-            <img src={aboutUsIcon} height="24px" alt="aboutUsIcon" />
-            About us
-          </NavLink>
-        
+
           <img
-          
             src={newfeature_s}
             height="57px"
             alt="logo"

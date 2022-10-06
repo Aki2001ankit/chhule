@@ -12,7 +12,7 @@ import { IconContext } from "react-icons";
 const Footer = () => {
   return (
     <>
-      <div className="footer bg-dark">
+      <div className="footer">
         <div className="contact-us">CONTACT US</div>
         <IconContext.Provider value={{ color: "#fff", size: "3.125em" }}>
           <div className="flex-container ">

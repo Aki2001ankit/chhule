@@ -1,0 +1,106 @@
+    .search-bar {
+        background-color: black;
+    }
+    
+    .search {
+        width: 100%;
+        display: flex;
+        padding-top: 10px;
+        justify-content: right;
+        padding-bottom: 1px;
+        padding-right: 30px;
+        align-items: center;
+    }
+    
+    @media(max-width:934px) {
+        .search {
+            margin-top: 12px;
+            justify-content: left;
+        }
+    }
+    
+    @media(max-width:720px) {
+        .search {
+            margin-top: 12px;
+            justify-content: right;
+        }
+    }
+    
+    .form-style {
+        border: 0;
+        background: transparent;
+        color: white;
+        height: 30px;
+    }
+    
+    .btn-height {
+        height: 30px;
+        border: 0;
+        background: transparent;
+    }
+    
+    .form-style:hover {
+        border: 0;
+    }
+    
+    .form-style:focus {
+        outline: none;
+    }
+    
+    .set-border {
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+    
+     ::placeholder {
+        color: white;
+    }
+    /* // blog cards */
+    
+    .bg-linear-vary {
+        /* Vector 25 */
+        background: linear-gradient(90deg, rgba(197, 95, 252, 0) 6.55%, rgba(197, 95, 252, 0.28125) 94.21%, rgba(197, 95, 252, 0.3) 100.05%);
+        opacity: 0.8;
+    }
+    
+    .bg-linear-vary-r {
+        background: linear-gradient(90deg, rgba(197, 95, 252, 0) 6.55%, rgba(197, 95, 252, 0.3) 100.05%);
+        opacity: 0.8;
+    }
+    
+    .title-style {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .short-desc-style {
+        /* Trip starts from Roorkee to Jaipur. You have two options either to go by train or by bus... */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: black
+    }
+    
+    .blog-extend-button {
+        background: rgba(197, 95, 252, 0.3);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: rgb(126, 83, 200);
+        border: 0px;
+        padding: 4px;
+        border-radius: 8px;
+    }
+    
+    .blog-extend-button:hover {
+        background: rgba(197, 95, 252, 0.532);
+    }

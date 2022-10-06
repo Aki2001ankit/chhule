@@ -5,8 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import IndianMarvels from "./pages/IndianMarvels";
+import Blogs from "./pages/blogs/Blogs";
+import IndianMarvels from "./pages/indianMarvel/IndianMarvels";
 import NearestCentres from "./pages/NearestCentres";
 import AboutUs from "./pages/AboutUs";
 
@@ -18,11 +18,11 @@ function App() {
     <div className="App">
       <Router hashType = 'noslash'> {/*Check Once: no slash is not working */}
         <Routes>
-          <Route index element={<Home />} />
-          <Route path='/Blogs' element={<Blogs />} />
-          <Route path='/IndianMarvels' element={<IndianMarvels />} />
-          <Route path='/NearestCentres' element={<NearestCentres />} />
-          <Route path='/AboutUs' element={<AboutUs />} />  
+          <Route exact path='/' element={<Home />} />
+          <Route  activeClassName="active" path='/blogs'  element={<Blogs />} />
+          <Route path='/indianmarvels' element={<IndianMarvels />} />
+          <Route path='/nearestcentres' element={<NearestCentres />} />
+          <Route path='/aboutus' element={<AboutUs />} />  
           
         
         </Routes>

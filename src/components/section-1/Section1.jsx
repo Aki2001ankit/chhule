@@ -1,6 +1,8 @@
 import React from "react";
 import track_1 from "../../assets/images/track_1.png";
 import Navbar from "../navbar/Navbar";
+import logo from "../navbar/logo.svg";
+import logo_m from "../navbar/logo_m.svg";
 
 import "./section1.css";
 
@@ -9,7 +11,10 @@ const Section_1 = () => {
     <>
       <div className="grid">
         <div className="grid_item">
-          <Navbar />
+          <Navbar 
+            logo ={logo}
+            logo_m={logo_m}
+          />
           <div>
             <div className="content">
               <p className="main_heading">EXPLORE TO LEARN</p>

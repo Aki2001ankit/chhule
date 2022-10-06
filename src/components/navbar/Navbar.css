@@ -18,6 +18,11 @@
     align-items: center;
     z-index: 2;
     transition: all 0.5s;
+    flex-direction: row;
+    flex-wrap: hidden;
+    /* flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
 }
 
 .navbar a {
@@ -53,9 +58,6 @@
 
 @media(min-width:720px) {
     .smallerwidth-logo {
-        display: none;
-    }
-    .navbar a:nth-child(1) {
         display: none;
     }
     .navbar a img {
@@ -103,4 +105,8 @@
     .navbar_mb a img {
         margin-right: 8px;
     }
+}
+
+.active {
+    color: black;
 }

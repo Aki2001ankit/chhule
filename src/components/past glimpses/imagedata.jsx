@@ -1,4 +1,4 @@
-import React from "react";
+
 import Trip_Place1 from "../../assets/images/Trip_Place1.png";
 const Images = [
   {
