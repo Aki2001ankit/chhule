@@ -64,8 +64,9 @@
     }
     
     .bg-linear-vary-r {
-        background: linear-gradient(90deg, rgba(197, 95, 252, 0) 6.55%, rgba(197, 95, 252, 0.3) 100.05%);
+        background: linear-gradient(90deg, rgba(197, 95, 252, 0.3), rgba(197, 95, 252, 0));
         opacity: 0.8;
+        /* Vector 27 */
     }
     
     .title-style {
@@ -103,4 +104,90 @@
     
     .blog-extend-button:hover {
         background: rgba(197, 95, 252, 0.532);
+    }
+    /* des blog */
+    
+    .how-button-in-des-blog {
+        border: 0;
+        background: transparent;
+        padding: 3px 5px;
+        margin: auto 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        border-bottom: 5px solid #C55FFC;
+        border-radius: 3px;
+    }
+    
+    .explore-button-in-des-blog {
+        border: 0;
+        background: transparent;
+        padding: 3px 5px;
+        margin: auto 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+    }
+    
+    .full-desc-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        color: #000000;
+    }
+    
+    .full-desc-subtitle1 {
+        /* REACHING YOUR DESTINATION */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        color: #C55FFC;
+    }
+    
+    .highlight-number-url {
+        color: #7E53C8;
+    }
+    
+    .full-desc-para {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #000000;
+    }
+    
+    .full-desc-rate-button {
+        background: rgba(197, 95, 252, 0.3);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: rgb(126, 83, 200);
+        border: 0px;
+        padding: 7px 22px;
+        border-radius: 8px;
+    }
+    
+    .full-desc-card-title {
+        /* CHOWKI DHANI */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    
+    .bg-and-border {
+        background-color: rgba(197, 95, 252, 0.09);
+        border-radius: 22px;
     }

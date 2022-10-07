@@ -1,23 +1,38 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "../../components/navbar/Navbar";
 import logo from "../../components/navbar/logo_blacktext.svg";
 import logo_m from "../../components/navbar/logo_bt_m.svg";
 import { IoSearchCircleSharp } from "react-icons/io5";
 import { IconContext } from "react-icons";
-import BlogCard from './blogCards'
+import RightBlogCard from './rightblogCardsmall'
+import LeftBlogCard from "./leftblogCardsmall";
 import "./blog.css";
 import Blogdata from './blogdata'
+import FullDescBlog from "./fulldescBlog";
 const Blogs = () => {
-  const Nblogcards =(val)=>{
+
+  const [state, setstate] = useState(false)
+  const Nblogcards =(val,key)=>{
+    console.log(key)
 return(<>
-  <BlogCard
+{key%2==0?
+  <RightBlogCard
     url1={val.url1}
     title1={val.title1}
     desc1={val.desc1}
-    title2={val.title2}
-    desc2={val.desc2}
-    url2={val.url2}
+    path={val.path}
+    state={state}
+    
   />
+  :
+  <LeftBlogCard
+    url1={val.url1}
+    title1={val.title1}
+    desc1={val.desc1}
+    state={state}
+    
+  />
+}
 </>)
   }
   return (
@@ -43,7 +58,8 @@ return(<>
           </div>
         </form>
       </div>
-      {Blogdata.map(Nblogcards)};
+      {Blogdata.map(Nblogcards)}; 
+     <FullDescBlog/>
 
 
     </>
