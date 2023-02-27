@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chhule/static/css/main.9480bb50.css",
-    "main.js": "/chhule/static/js/main.21ebfe13.js",
+    "main.js": "/chhule/static/js/main.6abed867.js",
     "static/media/track_1.png": "/chhule/static/media/track_1.945fb83f251d187d37b7.png",
     "static/media/Trip_Place1.png": "/chhule/static/media/Trip_Place1.9771522dae394a5df09b.png",
     "static/media/jaipur.svg": "/chhule/static/media/jaipur.4f73e0aa1fbdbe14226c36aeca4e9e49.svg",
@@ -22,10 +22,10 @@
     "static/media/nearestCenters.svg": "/chhule/static/media/nearestCenters.eb9b9aed4d228cfa32ddb3b7194a6b8a.svg",
     "static/media/Blogs.svg": "/chhule/static/media/Blogs.9f37e92537dca3e0a10e75865c2b042a.svg",
     "main.9480bb50.css.map": "/chhule/static/css/main.9480bb50.css.map",
-    "main.21ebfe13.js.map": "/chhule/static/js/main.21ebfe13.js.map"
+    "main.6abed867.js.map": "/chhule/static/js/main.6abed867.js.map"
   },
   "entrypoints": [
     "static/css/main.9480bb50.css",
-    "static/js/main.21ebfe13.js"
+    "static/js/main.6abed867.js"
   ]
 }
