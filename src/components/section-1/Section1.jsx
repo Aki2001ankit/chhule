@@ -15,6 +15,7 @@ const Section_1 = () => {
             logo ={logo}
             logo_m={logo_m}
           />
+          <p>hello from git</p>
           <div>
             <div className="content">
               <p className="main_heading">EXPLORE TO LEARN</p>

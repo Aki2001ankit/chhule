@@ -13,7 +13,7 @@ const Section2 = () => {
   const Ncard = (val) => {
     return <Card label={val.label} route={val.route} details={val.details} />;
   };
-  
+ 
   const myArrow =({ type, onClick, isEdge })=>{
     const pointer = type === consts.PREV ? <TiMediaPlayReverse/> : <TiMediaPlay/>
       return (
@@ -38,11 +38,18 @@ const Section2 = () => {
         <Carousel
           className="mb-2 mt-2"
           pagination={false}
+          enableAutoPlay autoPlaySpeed={1500}
           onNextStart={() => {
             setimageindex(imageindex + 1);
+            if(imageindex==3){
+    setimageindex(0);
+  }
           }}
           onPrevStart={() => {
             setimageindex(imageindex - 1);
+            if(imageindex==0){
+    setimageindex(3);
+  }
           }}
           renderArrow={myArrow}
         >
